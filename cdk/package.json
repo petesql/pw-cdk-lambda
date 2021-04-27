@@ -1,8 +1,8 @@
 {
-  "name": "cdk",
+  "name": "cdk-initial-tests",
   "version": "0.1.0",
   "bin": {
-    "cdk": "bin/cdk.js"
+    "cdk-initial-tests": "bin/cdk-initial-tests.js"
   },
   "scripts": {
     "build": "tsc",
@@ -21,7 +21,10 @@
     "typescript": "~3.9.7"
   },
   "dependencies": {
-    "@aws-cdk/core": "1.96.0",
+    "@aws-cdk/aws-iam": "^1.42.0",
+    "@aws-cdk/aws-lambda": "^1.42.0",
+    "@aws-cdk/aws-s3": "^1.42.0",
+    "@aws-cdk/core": "1.42.0",
     "source-map-support": "^0.5.16"
   }
 }
