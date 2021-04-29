@@ -1,8 +1,8 @@
-import * as cdk from '@aws-cdk/core';
+import { Stack, StackProps, Construct, } from '@aws-cdk/core';
 import { ManagedPolicy, User } from '@aws-cdk/aws-iam';
 
-export class CdkStack extends cdk.Stack {
-  constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
+export class LambdaStack extends Stack {
+  constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
     const user = new User(this, 'simpleuser', {
